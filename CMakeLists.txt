@@ -1,7 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
-if (EXISTS /media/wbc/workspace/opt/vcpkg5.5)
-    set(CMAKE_TOOLCHAIN_FILE "/media/wbc/workspace/opt/vcpkg5.5/scripts/buildsystems/vcpkg.cmake")
-elseif(EXISTS /opt/vcpkg)
+if (EXISTS /opt/vcpkg)
     set(CMAKE_TOOLCHAIN_FILE "/opt/vcpkg/scripts/buildsystems/vcpkg.cmake")
 endif ()
 project(demo LANGUAGES CXX)
